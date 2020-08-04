@@ -1,0 +1,157 @@
+import pandas as pd
+import numpy as np
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+#Q1.Write a function to return the gender which has the most fever rates.
+#Note:
+#Return Female if both genders have the same amount of fever rates.
+def most_gender_fever1(df):
+    
+    '''
+    Input: Dataframe df
+    Output: val (Gender which has the most fever rates)
+    '''
+    #s = pd.read_csv(filename, header=None, index_col=False)[0]
+    s.value_counts()
+    
+    val=_
+    return val
+
+
+
+#Q2. Write a function that returns the average BMI for the people who have Nausea/Vomiting, Diarrhea and Jaundice.
+#Note:
+#Return the average rounded off to three decimal places.
+def average_bmi2(df):
+    '''
+    Input: Dataframe df
+    Output: val (average BMI for the people who have Nausea/Vomiting, Diarrhea and Jaundice)
+    '''
+    val=_
+    return val
+
+
+
+#Q3. Write a function that returns the Patient_id as a list who have maximum Baseline histological Grading, Baselinehistological staging.
+def patient_id_maximum3(df):
+    
+    '''
+    Input: Dataframe df
+    Output: list3 
+    
+    '''
+    
+    list3=[]
+    
+    return list3
+
+
+
+#Q4. Write a function that returns the list containing the number of patients in each range of BMI.
+
+#BMI Chart:
+#Under_Weight: < 19
+#Healthy: 19 to 24(inclusive)
+#Over_Weight:25 to 29(inclusive)
+#Obese: >= 30
+
+#Note:
+#Return the list elements in the order [Under_Weight,Healthy,Over_Weight,Obese]
+
+def bmi_grouping4(df):
+    
+    '''
+    Input: Dataframe df
+    Output: list4
+    
+    '''
+    
+    list4=[]
+    
+    return list4
+
+
+
+#Q5. Write a function that returns the percentage of patients having healthy BMI.
+
+#Note:
+#Return the percentage rounded off to two decimal places.
+
+def bmi_healthy5(df):
+    '''
+    Input: Dataframe df
+    Output: val (Percentage)
+    '''
+    val=_
+    return val
+
+
+
+#Q6. Write a function that finds the Age group with most number of patients and returns the number of patients in that group.
+
+#Divide the Groups of Age with a period of 5 years like
+# 1 to 5
+# 6 to 10
+# 11 to 15
+# 16 to 20 
+# and so on.
+
+
+def most_patients6(df):
+    '''
+    Input: Dataframe df
+    Output: val (number of patients in that group)
+    '''
+    val=_
+    return val
+
+
+
+#Q7. Write a function that returns the Number of alcohlic liver disease cases in Male & Female.
+
+#If the ratio of 'aspartate transaminase' to 'alanine transaminase' is 2:1 or more then it is an Alcohlic liver disease
+#So,
+#If 'AST 1' divided by 'ALT 1' is greater than 2 then it is an Alcohlic liver disease
+
+#Note:
+#Return the list elements in the order [Male,Female]
+
+def alcoholic_liver_disease7(df):
+    '''
+    Input: Dataframe df
+    Output: list7 
+    '''
+    list7=[]
+    
+    return list7
+
+
+
+#Q8. Write a function that returns the Percentage of people less than age 40 who are in critical stage of cancer development
+
+#'Baseline histological Grading' refers to how abnormal the cancer cells are at present.Higher the grade,worse the situation is.
+#Here,the critical stage refers to the grade greater than '10'.
+
+#Note:
+#Find the percentage out of the patients under age 40 and round off upto two decimal places.
+
+def cancer_development8(df):
+    '''
+    Input: Dataframe df
+    Output: val
+    '''
+    val=_
+    return val
+
+if __name__ == '__main__':
+    filename1 = input()
+    df1=pd.read_csv(filename1)
+    print(most_gender_fever1(df1))
+    print(average_bmi2(df1))
+    print(sorted(patient_id_maximum3(df1)))
+    print(bmi_grouping4(df1))
+    print(bmi_healthy5(df1))
+    print(most_patients6(df1))
+    print(alcohlic_liver_disease7(df1))
+    print(cancer_development8(df1))
